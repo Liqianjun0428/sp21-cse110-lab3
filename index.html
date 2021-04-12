@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Journals</title>
+    <link rel="Journal icon" href="/screenshots/favicon.png">
+  </head>
+  <body>
+    <header>
+      <div>navigation</div>
+      <nav>
+        <ul>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#day1">Day1</a></li>
+          <li><a href="#day2">Day2</a></li>
+          <li><a href="#day3">Day3</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>My Journals</h1>
+      <section>
+        <h2 id="introduction">Introduction</h1>
+        <p>This website is about the events that took place in the past 3 days.
+          <strong>make sure to refer to navigation for quick access</strong>
+        </p>
+      </section>
+      <hr />
+      <section>
+        <h2 id="day1">Day1</h1>
+        <p>This paragrph is about day1</p>
+        <div>
+          <p>Today I bought my first computer,I spend 18000 RMB on it</p>
+          <p>Here is a list of the parts and their prices</p>
+          <ul>
+            <li>Graphic card <b> 2080 Ti </b>: 6000 RMB</li>
+            <li>Mother board <b> Auroars </b>: 1000 RMB</li>
+            <li>Power <b>Cooler-Master</b>: 1000 RMB</li>
+            <li>CPU <b>Intel i7-9700k</b>: 2000 RMB</li>
+            <li>cooling devices <b>Cooler-Master</b>: 1000 RMB</li>
+            <li>Disk and memory <b>Kingston</b>: 1000 RMB</li>
+            <li>other,mouse,keyboard,monitor <b>Logitech</b> : 3000 RMB</li>
+          </ul>
+          <span>warrenty and someother software costed another 2000 RMB </span>
+        </div>
+        <p> It looks fantastic</p>
+        <img
+          src="screenshots/computer.jpg"
+          alt="pancake"
+          width="250"
+        />
+      </section>
+      <hr />
+      <section>
+        <h2 id="day2">Day2</h1>
+        <p>This paragrph is about day2 </p>
+        <div>
+          <p>Today I setted up the software of my computer
+            <em>"You still have a lot of task to do"</em> my dad told me</p>
+          <p>I created a todo list for today</p>
+          <ol>
+            <li><input type="checkbox" /> install windows 10</li>
+            <li><input type="checkbox" /> install Macfee protection</li>
+            <li><input type="checkbox" /> install graphic card driver</li>
+            <li><input type="checkbox" /> setup internet</li>
+            <li><input type="checkbox" /> backup the current system</li>
+          </ol>
+          <p>I ran into some mistakes and reinstall the system a few times and finally I made it
+            <br />
+            <i>"good job"</i> my dad told me</p>
+          </p>
+        </div>
+      </section>
+      <hr />
+      <section>
+        <h2 id="day3">Day3</h1>
+        <p>This paragrph is about day3</p>
+        <div>
+          <p>I installed some games on my PC and tested its performance</p>
+          <p>Here is a game capture, my pc is quite fast even when recording</p>
+          <video width="320" height="240" controls>
+            <source src="media/overwatch.mp4" type="video/mp4">
+          </video>
+          <p>This game is called overwatch,click below for more info</p>
+          <details>
+            <summary>Overwatch</summary>
+            <p>A FPS game created by Blizzard entertainment in 2016, Featuring teamwork and variety of Heros</p>
+          </details>
+          <p>Let enjoy some music now and celebrate!</p>
+          <p><i>The Sound of Silence by Pentatonix</i></p>
+          <audio controls>
+            <source src="media/Pentatonix - The Sound of Silence.mp3" type="audio/mp3">
+          </audio>
+        </div>
+      </section>
+      <hr />
+    <footer>
+      <h1>Create your own journal</h1>
+      <form>
+        <fieldset>
+          <legend>Personalia</legend>
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname"><br><br>
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname"><br><br>
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date"><br><br>
+          <p>Please select your gender:</p>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label><br>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label><br>
+          <input type="radio" id="other" name="gender" value="other">
+          <label for="other">Other</label>
+          <p>operating system</p>
+          <input type="checkbox" id="win" name="win" value="windows">
+          <label for="win"> windows 7/8/10</label><br>
+          <input type="checkbox" id="mac" name="mac" value="Mac">
+          <label for="mac"> Mac</label><br>
+          <input type="checkbox" id="linux" name="linux" value="Linux">
+          <label for="linux"> Linux</label><br><br>
+          <input type="submit" value="Submit">
+        </fieldset>
+        <fieldset>
+        <legend>What have we learned.</legend>
+        <p>Choose what to do</p>
+        <label for="Journaldays">Choose how many days should your journal have.:</label>
+        <select id="Journaldays">
+          <option value="opt1">1</option>
+          <option value="opt2">2</option>
+          <option value="opt3">3</option>
+          <option value="opt4">4</option>
+        </select>
+        <br />
+        <label for="italic">which of the following will italize the text:</label>
+        <select id="italic">
+          <option value="opt1">i</option>
+          <option value="opt2">b</option>
+          <option value="opt3">strong</option>
+          <option value="opt4">section</option>
+        </select>
+        <br />
+        <label for="comment">comment:</label>
+        <br />
+        <textarea id="comment" name="comment" rows="4" cols="50">
+        make you own comment about how to do to create a website journal
+        </textarea>
+        <br />
+        <button type="button">Get started!</button>
+      </fieldset>
+      </form>
+
+    </footer>
+  </body>
+</html>
