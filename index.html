@@ -5,29 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Journals</title>
     <link rel="icon" type="img/png" href="/screenshots/favicon-16x16.png" />
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header>
-      <div>navigation</div>
-      <nav>
-        <ul>
-          <li><a href="#introduction">Introduction</a></li>
-          <li><a href="#day1">Day1</a></li>
-          <li><a href="#day2">Day2</a></li>
-          <li><a href="#day3">Day3</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <h1 style="color:#363d29;">Hello world,This is my journal</h1>
     </header>
+      
+    <div>navigation</div>
+    <nav>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#day1">Day1</a></li>
+        <li><a href="#day2">Day2</a></li>
+        <li><a href="#day3">Day3</a></li>
+      </ul>
+    </nav>
+
+
     <main>
       <h1>My Journals</h1>
-      <section>
+      <section id="introsec">
         <h2 id="introduction">Introduction</h2>
         <p>This website is about the events that took place in the past 3 days.
           <strong>make sure to refer to navigation for quick access</strong>
         </p>
+        <section>
+          <h4>flex example</h4>
+          <div class="flexExample">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>  
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>  
+          </div>
       </section>
+        <section>
+          <h4>Grid example</h3>
+            <div class="grid-container">
+              <div class="grid-item">laksdjflk</div>
+              <div class="grid-item">asdfasdf</div>
+              <div class="grid-item">asdfasdf</div>  
+              <div class="grid-item">asdfasdf</div>
+              <div class="grid-item">ewfawefaw</div>
+              <div class="grid-item">asdfasdfasdf</div>  
+              <div class="grid-item">asefaesf</div>
+              <div class="grid-item">asefasef</div>
+              <div class="grid-item">asefaesf</div>  
+            </div>
+            
+      </section>
+      </section>
+
       <hr />
-      <section>
+
+      <section class="DD1" id="day1sec">
         <h2 id="day1">Day1</h2>
         <p>This paragrph is about day1</p>
         <div>
@@ -51,8 +84,10 @@
           width="250"
         />
       </section>
+
       <hr />
-      <section>
+
+      <section id="day2sec">
         <h2 id="day2">Day2</h2>
         <p>This paragrph is about day2 </p>
         <div>
@@ -72,8 +107,10 @@
           </p>
         </div>
       </section>
+
       <hr />
-      <section>
+
+      <section id="day3sec">
         <h2 id="day3">Day3</h2>
         <p>This paragrph is about day3</p>
         <div>
@@ -94,64 +131,70 @@
           </audio>
         </div>
       </section>
-      <hr />
-    </main>
-    <footer>
-      <h1>Create your own journal</h1>
-      <form>
-        <fieldset>
-          <legend>Personalia</legend>
-          <label for="fname">First name:</label>
-          <input type="text" id="fname" name="fname"><br><br>
-          <label for="lname">Last name:</label>
-          <input type="text" id="lname" name="lname"><br><br>
-          <label for="date">Date:</label>
-          <input type="date" id="date" name="date"><br><br>
-          <p>Please select your gender:</p>
-          <input type="radio" id="male" name="gender" value="male">
-          <label for="male">Male</label><br>
-          <input type="radio" id="female" name="gender" value="female">
-          <label for="female">Female</label><br>
-          <input type="radio" id="other" name="gender" value="other">
-          <label for="other">Other</label>
-          <p>operating system</p>
-          <input type="checkbox" id="win" name="win" value="windows">
-          <label for="win"> windows 7/8/10</label><br>
-          <input type="checkbox" id="mac" name="mac" value="Mac">
-          <label for="mac"> Mac</label><br>
-          <input type="checkbox" id="linux" name="linux" value="Linux">
-          <label for="linux"> Linux</label><br><br>
-          <input type="submit" value="Submit">
-        </fieldset>
-        <fieldset>
-        <legend>What have we learned.</legend>
-        <p>Choose what to do</p>
-        <label for="Journaldays">Choose how many days should your journal have.:</label>
-        <select id="Journaldays">
-          <option value="opt1">1</option>
-          <option value="opt2">2</option>
-          <option value="opt3">3</option>
-          <option value="opt4">4</option>
-        </select>
-        <br />
-        <label for="italic">which of the following will italize the text:</label>
-        <select id="italic">
-          <option value="opt1">i</option>
-          <option value="opt2">b</option>
-          <option value="opt3">strong</option>
-          <option value="opt4">section</option>
-        </select>
-        <br />
-        <label for="comment">comment:</label>
-        <br />
-        <textarea id="comment" name="comment" rows="4" cols="50">
-        make you own comment about how to do to create a website journal
-        </textarea>
-        <br />
-        <button type="button">Get started!</button>
-      </fieldset>
-      </form>
 
+      <hr />
+
+    </main>
+
+    <footer class="footer">
+      <section id="formsec">
+        <h1>Create your own journal</h1>
+        <form>
+          <fieldset>
+            <legend>Personalia</legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date"><br><br>
+            <p>Please select your gender:</p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+            <p>operating system</p>
+            <input type="checkbox" id="win" name="win" value="windows">
+            <label for="win"> windows 7/8/10</label><br>
+            <input type="checkbox" id="mac" name="mac" value="Mac">
+            <label for="mac"> Mac</label><br>
+            <input type="checkbox" id="linux" name="linux" value="Linux">
+            <label for="linux"> Linux</label><br><br>
+            <input type="submit" value="Submit">
+          </fieldset>
+          <fieldset>
+          <legend>What have we learned.</legend>
+          <p>Choose what to do</p>
+          <label for="Journaldays">Choose how many days should your journal have.:</label>
+          <select id="Journaldays">
+            <option value="opt1">1</option>
+            <option value="opt2">2</option>
+            <option value="opt3">3</option>
+            <option value="opt4">4</option>
+          </select>
+          <br />
+          <label for="italic">which of the following will italize the text:</label>
+          <select id="italic">
+            <option value="opt1">i</option>
+            <option value="opt2">b</option>
+            <option value="opt3">strong</option>
+            <option value="opt4">section</option>
+          </select>
+          <br />
+          <label for="comment">comment:</label>
+          <br />
+          <textarea id="comment" name="comment" rows="4" cols="50">
+          make you own comment about how to do to create a website journal
+          </textarea>
+          <br />
+          <button type="button">Get started!</button>
+        </fieldset>
+        </form>
+      </section>
     </footer>
+
   </body>
+
 </html>
